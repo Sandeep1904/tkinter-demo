@@ -18,4 +18,12 @@ label2.grid(row=1, column=0)
 
 entry1.grid(row=0,column=1)
 entry2.grid(row=1,column=1)
+
+
+def dosome():
+    print('you clicked the button')
+
+# dont use pack while using grid!
+button1=Button(root , text='click here', command=dosome)
+button1.grid(row=2)
 root.mainloop()
